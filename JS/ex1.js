@@ -35,3 +35,16 @@ const getCharacters = houseCode => {
     }
 
 };
+
+const houselist = document.getElementById("house");
+const dropdown = document.createElement("dropdown");
+
+houses.forEach(home=> {
+   dropdown.textContent = home.name;
+   houselist.appendChild(dropdown);
+});
+
+console.log(houses.forEach(home1 =>{
+    const codes = getCharacters(houses.code);
+    console.log(`${houses.name}: ${codes}`);
+  }));
